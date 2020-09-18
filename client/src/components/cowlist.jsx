@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CowList = ({cows}) => (
+const CowList = ({ cows }) => (
   <div>
     {cows.map((cow) => (
       <div>
