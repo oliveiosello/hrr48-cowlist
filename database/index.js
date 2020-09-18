@@ -3,7 +3,8 @@ const mysql = require('mysql');
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: ''
+  password: '',
+  database: 'cowlist'
 });
 
 connection.connect((err) => {
@@ -12,3 +13,5 @@ connection.connect((err) => {
   }
   console.log('CONNECTED');
 });
+
+module.exports = connection;

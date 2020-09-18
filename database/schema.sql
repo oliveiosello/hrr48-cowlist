@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS cowlist;
+
+CREATE DATABASE cowlist;
+
+USE cowlist;
+
+CREATE TABLE IF NOT EXISTS cows (
+  id INT NOT NULL AUTO_INCREMENT,
+  name TEXT,
+  description TEXT,
+  PRIMARY KEY (id)
+);
